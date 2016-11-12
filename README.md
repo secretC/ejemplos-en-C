@@ -1,11 +1,11 @@
 # Ejemplos en C
 ## Ejecutar archivos:
-## Usando make
+### Modo 1: Usando make.
 ```bash
 $ make -s
 ```
 
-## De manera simple:
+### Modo 2:  De manera simple.
 ```bash
 $ gcc <tu_archivo.c> -std=c99 -o <tu_archivo_de_salida>
 ```
