@@ -1,5 +1,6 @@
 /*
  * Author: Juan Espejo
+ * Repository: https://github.com/JuanEspejo/Programacion/tree/master/Estructuras-de-control-iterativas
  */
 #include <stdio.h>
 #include <stdlib.h>
