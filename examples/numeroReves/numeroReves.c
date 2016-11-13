@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- Resolucion en papel para el número 123.
+ Resolución en papel para el número 123.
 
  Declarando variables:
  variables: numero,resto, resta;
@@ -24,12 +24,15 @@
 			0   / 10 = 0; 
 			------------------- 
 			0   % 10 = 0 --> Valor que no se debe mostrar.
-			-> "0" no puede imprimir en la terminal,
-			Seria la condición, cuando el nuevo valor de "numero" = 0 
-			la repetición termina(bucle);
+
+
+
+			---> "0" no se debe imprimir en la terminal,seria la condición, 
+			cuando el nuevo valor de "numero" es igual a  cero la repetición termina(bucle).
+
 			De aqui no fijamos dos cosas:
 				- 10 es constante.
-				- La repitición termia cuando el nuevo valor de "numero" es cero.
+				- La repitición termina cuando el nuevo valor de "numero" es cero.
  		
 		- Function:
 				resto = numero % 10;
