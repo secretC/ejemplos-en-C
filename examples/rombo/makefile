@@ -1,7 +1,7 @@
-all:run
-run:rombo
-	./rombo
-	rm -rf rombo
+DEFAULT: RUN
 
-clean:
-	rm -rf hello-world
+COMPILE: 
+	gcc rombo.c -o program
+RUN: COMPILE
+	./program
+	rm -rf program

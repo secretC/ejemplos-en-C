@@ -4,7 +4,7 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
-void main()
+int main()
 {
 	int n,x,y,h;
     printf("Diagonal = ");
@@ -16,4 +16,5 @@ void main()
             if ( (abs(x) + abs(y)) <= h ) printf("*"); else printf(" ");
         printf("\n");
     }
+    return 0;
 }
