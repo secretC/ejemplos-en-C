@@ -48,8 +48,8 @@ int main(int argc, char const *argv[])
 	puts("Ingresar número: ");
 	// Ingresamos valor para "numero".
 	scanf("%d", &numero);
-	// Iniciamos bucle con la condición "numero" diferente de cero.
 	puts("El nuevo número es: ");
+	// Iniciamos bucle con la condición "numero" diferente de cero.
 	while(numero != 0){
 		resto = numero % 10;
 		resta = numero - resto;
