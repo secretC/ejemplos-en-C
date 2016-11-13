@@ -1,10 +1,12 @@
+/*
+ * Author: Juan Espejo
+ */
 #include <stdio.h>
-#include <math.h>
 #include <stdlib.h>
 void main()
 {
 	int n,x,y,h;
-    printf("n = ");
+    printf("Diagonal = ");
     scanf("%d",&n);
     h = (n-1)/2;
     for (y=-h; y <= h ; y++)
