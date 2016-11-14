@@ -3,23 +3,25 @@
  Resolución en papel para el número 123.
 
  Declarando variables:
- variables: numero,resto, resta;
+ variables: numero,resto;
 
  Número ingresado:
  	numero = 123;
 
  Procedimiento:
  	
- 		123 % 10 = 3;  --> Capturamos este número.
- 		123 - 3  = 120;
- 		120 / 10 = 12; --> Nuevo valor de "numero".
+ 		123 % 10 = 3;   --> Capturamos este número.
+ 		123 - 3  = 120; --> Paso no necesario, 
+											  la divison en C te da entero por
+											  que las variables son enteras.
+ 		120 / 10 = 12;  --> Nuevo valor de "numero".
 		-------------------
 		12  % 10 = 2;  --> Capturamos este número.
 		12  - 2  = 10;
 		10  / 10 = 1;  --> Nuevo valor de "numero".
 		-------------------
 		1   % 10 = 1;  --> Capturamos este número.
-		1   - 1  = 0;
+		1   - 1  = 0;  
 		0   / 10 = 0;  --> Nuevo valor de "numero".
 		------------------- 
 		0   % 10 = 0 --> Valor que no se debe mostrar.
@@ -35,8 +37,7 @@
 		
 	- Function:
 			resto = numero % 10;
-			resta = numero - resto;
-			numero = resta /10;  >>> Es el nuevo valor de "numero"
+			numero = resto /10;  >>> Es el nuevo valor de "numero"
 */
 
 
@@ -51,8 +52,7 @@ int main(int argc, char const *argv[])
 	// Iniciamos bucle con la condición "numero" diferente de cero.
 	while(numero != 0){
 		resto = numero % 10;
-		resta = numero - resto;
-		numero = resta / 10; // Nuevo valor de "numero"
+		numero = numero / 10; // Nuevo valor de "numero"
 
 		printf("%d", resto);
 	}
