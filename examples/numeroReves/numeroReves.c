@@ -39,7 +39,7 @@
 
 int main(int argc, char const *argv[])
 {
-	int numero, resta, resto;
+	int numero, resto;
 	// Mostramos mensaje en la terminal.
 	puts("Ingresar número: ");
 	// Ingresamos valor para "numero".
