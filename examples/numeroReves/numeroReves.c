@@ -12,13 +12,13 @@
  	
  		123 % 10 = 3;   --> Capturamos este número.
  		123 - 3  = 120; --> Paso no necesario, la divison es un entero, las variables son enteras.
- 		120 / 10 = 12;  --> Nuevo valor de "numero".
+ 		123 / 10 = 12;  --> Nuevo valor de "numero".
 		-------------------
 		12  % 10 = 2;  --> Capturamos este número.
-		10  / 10 = 1;  --> Nuevo valor de "numero".
+		12  / 10 = 1;  --> Nuevo valor de "numero".
 		-------------------
 		1   % 10 = 1;  --> Capturamos este número.
-		0   / 10 = 0;  --> Nuevo valor de "numero".
+		1   / 10 = 0;  --> Nuevo valor de "numero".
 		------------------- 
 		0   % 10 = 0 --> Valor que no se debe mostrar.
 
