@@ -11,9 +11,7 @@
  Procedimiento:
  	
  		123 % 10 = 3;   --> Capturamos este número.
- 		123 - 3  = 120; --> Paso no necesario, 
-											  la divison en C te da entero por
-											  que las variables son enteras.
+ 		123 - 3  = 120; --> Paso no necesario,la divison en C te da entero, las variables son enteras.
  		120 / 10 = 12;  --> Nuevo valor de "numero".
 		-------------------
 		12  % 10 = 2;  --> Capturamos este número.
