@@ -47,7 +47,7 @@ int main(int argc, char const *argv[])
 	puts("El nuevo número es: ");
 	// Iniciamos bucle con la condición "numero" diferente de cero.
 	while(numero != 0){
-		resto = numero % 10;
+		resto = numero % 10; // valor que capturamos.
 		numero = numero / 10; // Nuevo valor de "numero"
 
 		printf("%d", resto);
