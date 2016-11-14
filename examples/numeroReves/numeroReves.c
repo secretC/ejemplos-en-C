@@ -37,22 +37,47 @@
 */
 
 
-int main(int argc, char const *argv[])
-{
-	int numero, resto;
+// Definimos las variables.
+int numero, resto;
+char respuesta;
+
+
+// Función numeroReves().
+void numeroReves(int parametro){
+	// Iniciamos bucle con la condición "parametro" diferente de cero.
+	while(parametro != 0){
+		resto = parametro % 10; // valor que capturamos.
+		parametro = parametro / 10; // Nuevo valor de "numero"
+
+		printf("%d", resto);
+	}
+}
+// -------------------------------------
+// Función principal(main).
+int main(){
+	inicio:
 	// Mostramos mensaje en la terminal.
 	puts("Ingresar número: ");
 	// Ingresamos valor para "numero".
 	scanf("%d", &numero);
 	puts("El nuevo número es: ");
-	// Iniciamos bucle con la condición "numero" diferente de cero.
-	while(numero != 0){
-		resto = numero % 10; // valor que capturamos.
-		numero = numero / 10; // Nuevo valor de "numero"
-
-		printf("%d", resto);
-	}
+	// Llamamos a la function "numeroReves()" e indicamos como parametro "numero";
+	numeroReves(numero);
 	// Salto de linea.
 	printf("\n");
+
+	puts("Desea ingresar otro valor?(y/n):");
+	// %c  es para capturar un caracter.
+	scanf(" %c",&respuesta);// El espacio antes de %c es para no capturar el "enter" anterior.
+	// Para indicar que es un caracter se usa comillas simples ''.
+	// Comillas dobles para cadenas "".
+	// Si quieres comparar cadenas debes usar la libreria <string.h>
+	if(respuesta == 'y'){
+		goto inicio;
+	}else{
+		goto salir;
+	}
+	salir:
+	// return 0; Termina el programa sin problemas.
 	return 0;
 }
