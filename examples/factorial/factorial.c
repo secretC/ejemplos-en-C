@@ -16,6 +16,7 @@ int factorial(int n){
 	}
 	return resultado;
 }
+
 int main(){
 	int numero;
 	puts("Ingresar número: ");
